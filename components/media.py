@@ -47,11 +47,17 @@ def audio_recorder_component():
 
 def show_media_page(translations):
     st.subheader(translations["record_audio"])
-
+    
     audio_buffer = audio_recorder_component()
 
     if audio_buffer is not None:
         st.audio(audio_buffer, format='audio/wav')
+        st.download_button(
+            label=translations["download_audio"],
+            data=audio_buffer,
+            file_name="recorded_audio.wav",
+            mime="audio/wav"
+        )
         return audio_buffer
 
     st.subheader(translations["upload_audio"])
