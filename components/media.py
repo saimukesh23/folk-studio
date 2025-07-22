@@ -48,11 +48,11 @@ def audio_recorder_component():
 def show_media_page(translations):
     st.subheader(translations["record_audio"])
 
-    # This is a placeholder for the audio recorder component
-    # We will use a simple file uploader for now, as streamlit-webrtc can be complex to set up
-    # and requires additional dependencies.
+    audio_buffer = audio_recorder_component()
 
-    st.info("Audio recording functionality is under development. Please use the upload option for now.")
+    if audio_buffer is not None:
+        st.audio(audio_buffer, format='audio/wav')
+        return audio_buffer
 
     st.subheader(translations["upload_audio"])
     uploaded_file = st.file_uploader(
