@@ -1,0 +1,7 @@
+streamlit
+pandas
+streamlit-webrtc
+pydub
+groq
+httpx
+av
