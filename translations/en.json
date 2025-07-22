@@ -12,6 +12,7 @@
     "region": "Region",
     "submit": "Submit",
     "logout": "Logout",
+    "download_audio": "Download Audio",
     "ai_lyrics_generator": "AI Lyrics Generator",
     "internet_needed": "Connect to internet to use AI features"
 }
