@@ -1,0 +1,17 @@
+{
+    "app_title": "Folk Studio",
+    "login": "Login",
+    "register": "Register",
+    "username": "Username",
+    "password": "Password",
+    "native_place": "Native Place (Village/Town/City)",
+    "select_language": "Select Language",
+    "record_audio": "Record Audio",
+    "upload_audio": "Upload Audio",
+    "folk_type": "Folk Type",
+    "region": "Region",
+    "submit": "Submit",
+    "logout": "Logout",
+    "ai_lyrics_generator": "AI Lyrics Generator",
+    "internet_needed": "Connect to internet to use AI features"
+}
