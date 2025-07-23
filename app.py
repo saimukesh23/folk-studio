@@ -1,7 +1,6 @@
 import streamlit as st
 import json
 from components.login import show_login_page
-from components.media import show_media_page
 from core.auth import init_db
 from config.config import LANGUAGES
 
@@ -40,6 +39,7 @@ def main():
         st.title(translations["app_title"])
         st.write(f"Welcome, {st.session_state.username}!")
 
+        from components.media import show_media_page
         from core.storage import save_audio_file, save_metadata
         from core.ai import check_internet_connection, generate_lyrics
         import pandas as pd

@@ -52,12 +52,6 @@ def show_media_page(translations):
 
     if audio_buffer is not None:
         st.audio(audio_buffer, format='audio/wav')
-        st.download_button(
-            label=translations["download_audio"],
-            data=audio_buffer,
-            file_name="recorded_audio.wav",
-            mime="audio/wav"
-        )
         return audio_buffer
 
     st.subheader(translations["upload_audio"])
